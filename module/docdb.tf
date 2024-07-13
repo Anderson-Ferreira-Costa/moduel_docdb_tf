@@ -28,7 +28,6 @@ resource "aws_docdb_cluster_instance" "default" {
   tags                         = merge(var.tags, local.tags)
 }
 
-
 resource "aws_docdb_subnet_group" "default" {
   name        = local.subnet_name
   description = "Allowed subnets for DB cluster instances"
