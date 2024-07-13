@@ -68,21 +68,6 @@ variable "log_retention" {
   default     = 14
 }
 
-variable "rotate_lambda" {
-
-  type = object({
-    zip     = string
-    handler = string
-  })
-  description = "(Required) Lambda responsable to rotate the password. Default zip = lambda_rotate.zip handler = main"
-  default = {
-    handler = "main"
-    zip     = "lambda_rotate.zip"
-  }
-}
-
-
-
 variable "instance_count" {
   type        = number
   description = "(Optional) Number of the instance that will contains in the cluster. Default: 1"
