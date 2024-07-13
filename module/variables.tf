@@ -50,12 +50,6 @@ variable "tags" {
   default     = {}
 }
 
-variable "password_rotate_after_days" {
-  type        = number
-  description = "(Required) Specifies the number of days between automatic scheduled rotations of the secret. Default 30 days"
-  default     = 30
-}
-
 variable "password_length" {
   type        = number
   description = "(Required) Specifies the length of password. Default 32"
