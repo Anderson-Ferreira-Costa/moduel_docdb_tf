@@ -1,7 +1,3 @@
-provider "aws" {
-  region = var.region
-}
-
 module "default" {
   source                  = "./module/"
   region                  = var.region

@@ -4,3 +4,7 @@ terraform {
     aws = ">= 4.27"
   }
 }
+
+provider "aws" {
+  region = var.region
+}
